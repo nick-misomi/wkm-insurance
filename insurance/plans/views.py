@@ -22,3 +22,6 @@ def third_party(request):
 def motor_commercial(request):
     return render(request, 'plans/motor_commercial_detail.html')
 
+def qoute(request):
+    return render(request, 'plans/qoute.html')
+
