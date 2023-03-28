@@ -1,0 +1,27 @@
+{% extends "landing/base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+<div class="jumbotron">
+  <h1>Life Insurance Plans</h1>
+  <p>Choose the best life insurance plan that suits your needs:</p>
+  <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Get Qoute</a>
+</div>
+  
+  {% for plan in plans %}
+    <div class="plan">
+      <h2>{{ plan.name }}</h2>
+      <p><strong>Description:</strong> {{ plan.description }}</p>
+      <p><strong>Price:</strong> ${{ plan.price }}</p>
+      <p><strong>Coverage:</strong> {{ plan.coverage }}</p>
+      <p><strong>Benefits:</strong></p>
+      <ul>
+        {% for benefit in plan.benefits %}
+          <li>{{ benefit }}</li>
+        {% endfor %}
+      </ul>
+      <a href="{% url 'plan_detail' plan.id %}">View Details</a>
+    </div>
+  {% endfor %}
+{% endblock %}

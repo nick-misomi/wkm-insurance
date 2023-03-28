@@ -1,0 +1,51 @@
+{% extends "landing/base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+<div class="jumbotron">
+    <div class="container">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Pension Plans</h2>
+          <p class="card-text">Secure your retirement with our comprehensive pension plans.</p>
+          <p class="card-text">Price: $100/month</p>
+          <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Get Qoute</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h3>What's included?</h3>
+      <ul>
+        <li>Regular pension income after retirement</li>
+        <li>Flexibility to choose retirement age</li>
+        <li>Option to add spouse or partner as beneficiary</li>
+        <li>Death benefit for beneficiaries</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h3>How it works</h3>
+      <p>Sign up for our pension plan and start making monthly contributions. We invest your money in a mix of stocks, bonds, and other assets to ensure long-term growth. Once you retire, we provide you with regular pension income for the rest of your life. You can also choose to add a spouse or partner as a beneficiary.</p>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h3>Why choose us?</h3>
+      <ul>
+        <li>Experienced team of financial advisors</li>
+        <li>Flexible plans that can be customized to your needs</li>
+        <li>Competitive rates of return</li>
+        <li>Transparent fees and charges</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

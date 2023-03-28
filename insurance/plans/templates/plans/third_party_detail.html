@@ -1,0 +1,44 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+<div class="container">
+    <div class="container">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="jumbotron">
+                <h2 class="card-title">Third Party Insurance Cover</h2>
+                <p class="card-text">This plan provides coverage for third-party liability and personal accident protection.</p>
+                <p class="card-text">Price: $250</p>
+              <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Get Qoute</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3><strong>What's covered?</strong></h3>
+        <ul>
+          <li>Third-party liability</li>
+          <li>Personal accident protection</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3><strong>What's not covered?</strong></h3>
+        <ul>
+          <li>Damage to your own vehicle</li>
+          <li>Theft of your own vehicle</li>
+          <li>Fire or other damage to your own vehicle</li>
+          <li>Any damage or injury to yourself</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

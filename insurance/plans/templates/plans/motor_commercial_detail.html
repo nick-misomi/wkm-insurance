@@ -1,0 +1,45 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+<div class="jumbotron">
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Motor Commercial Plan</h2>
+        <p class="card-text">This plan provides coverage for your car, third-party liability, and personal accident protection.</p>
+        <p class="card-text">Price: $500</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Get Qoute</a>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3><strong>What's covered?</strong></h3>
+        <ul>
+          <li>Accidental damage</li>
+          <li>Theft or attempted theft</li>
+          <li>Fire, explosion, or lightning</li>
+          <li>Flood, storm, or hail</li>
+          <li>Third-party liability</li>
+          <li>Personal accident protection</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3><strong>what's not covered?</strong></h3>
+        <ul>
+          <li>Intentional damage or negligence</li>
+          <li>Racing or speed testing</li>
+          <li>Using the vehicle for hire or reward</li>
+          <li>Driving under the influence of alcohol or drugs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

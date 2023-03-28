@@ -1,0 +1,35 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+  <div class="jumbotron">
+    <h1>Our Services</h1>
+    <p>Choose from our wide range of insurance products to meet your needs.</p>
+  </div>
+
+  <div class="container">
+    <div class="col-md-4">
+      <h2>Pension</h2>
+      <p>Stay confotable after retirement and secure with our range of pension plans.</p>
+      <a class="btn btn-default" href="{% url 'pension' %}" role="button">View details &raquo;</a>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Motor Insurance</h2>
+        <p>Protect your vehicle with our comprehensive motor insurance policies.</p>
+        <a class="btn btn-default" href="{% url 'motor_insurance' %}" role="button">View details &raquo;</a>
+      </div>
+      <div class="col-md-4">
+        <h2>Health Insurance</h2>
+        <p>Stay healthy and secure with our range of health insurance plans.</p>
+        <a class="btn btn-default" href="{% url 'health_insurance' %}" role="button">View details &raquo;</a>
+      </div>
+      <div class="col-md-4">
+        <h2>Life Insurance</h2>
+        <p>Protect your loved ones with our range of life insurance policies.</p>
+        <a class="btn btn-default" href="{% url 'life_insurance' %}" role="button">View details &raquo;</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

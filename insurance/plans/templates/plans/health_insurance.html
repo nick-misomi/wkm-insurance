@@ -1,0 +1,63 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+<div class="container">
+    <div class="card mb-4">
+        <div class="jumbotron">
+            <div class="card-body">
+                <h2 class="card-title">Health Insurance Plans</h2>
+                <p class="card-text">Choose from our range of health insurance plans to find the right one for you.</p>
+                <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Get Qoute</a>
+            </div>
+        </div>
+   </div>
+</div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="mb-3">Basic Plan</h3>
+        <p class="card-text">$100 per month</p>
+        <ul class="list-group">
+          <li class="list-group-item">Hospitalization expenses</li>
+          <li class="list-group-item">Diagnostic tests</li>
+          <li class="list-group-item">Doctor's fees</li>
+          <li class="list-group-item">Emergency medical expenses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="mb-3">Advanced Plan</h3>
+        <p class="card-text">$200 per month</p>
+        <ul class="list-group">
+          <li class="list-group-item">Hospitalization expenses</li>
+          <li class="list-group-item">Diagnostic tests</li>
+          <li class="list-group-item">Doctor's fees</li>
+          <li class="list-group-item">Emergency medical expenses</li>
+          <li class="list-group-item">Specialist consultations</li>
+          <li class="list-group-item">Prescription medication</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="mb-3">Premium Plan</h3>
+        <p class="card-text">$300 per month</p>
+        <ul class="list-group">
+          <li class="list-group-item">Hospitalization expenses</li>
+          <li class="list-group-item">Diagnostic tests</li>
+          <li class="list-group-item">Doctor's fees</li>
+          <li class="list-group-item">Emergency medical expenses</li>
+          <li class="list-group-item">Specialist consultations</li>
+          <li class="list-group-item">Prescription medication</li>
+          <li class="list-group-item">Dental and vision coverage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+

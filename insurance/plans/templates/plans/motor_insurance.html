@@ -1,0 +1,44 @@
+{% extends "landing/base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Comprehensive</h2>
+            <p class="card-text">Get coverage for your car, third-party liability, and personal accident protection.</p>
+            <p class="card-text">Price: $500</p>
+            <a href="{% url 'comprehesive_detail' %}" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Third Party</h2>
+            <p class="card-text">Get coverage for third-party liability and personal accident protection.</p>
+            <p class="card-text">Price: $250</p>
+            <a href="{% url 'third_party' %}" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Motor Commercial</h2>
+            <p class="card-text">Get coverage for commercial vehicles, third-party liability, and personal accident protection.</p>
+            <p class="card-text">Price: $1000</p>
+            <a href="{% url 'motor_commercial' %}" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+{% endblock %}

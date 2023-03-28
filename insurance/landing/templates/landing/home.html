@@ -1,0 +1,58 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+  <div class="jumbotron">
+    <h1>Welcome to WKM Insurance</h1>
+    <p>We offer a wide range of insurance products to meet your needs</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Learn more</a>
+  </div>
+
+  <!-- Welcome Video -->
+  <section id="welcome-video" class="py-5">
+    <div class="container">
+      <div class="embed-responsive embed-responsive-16by9">      
+        <iframe width="556" height="313" src="https://www.youtube.com/embed/cpP-fCo8Dn4" title="Welcome Video - Bokeh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Description -->
+  <section id="company-description" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Our Company</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget felis felis. Nullam blandit accumsan nibh, vel viverra sapien.</p>
+          <p>Mauris ut augue ac lectus congue congue sit amet eget erat. Nullam ullamcorper ipsum ac massa fringilla, in euismod quam varius.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="{% static 'images/about-us.jpg' %}" class="img-fluid rounded" alt="About Us">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Form -->
+  <section id="subscription-form" class="py-5 bg-light">
+    <div class="container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Sign up for our newsletter and stay up to date with the latest news and promotions.</p>
+      <form method="POST" action="{% url 'home' %}">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'static/main.js' %}"></script>
+  </section>
+{% endblock %}
