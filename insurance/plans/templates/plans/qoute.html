@@ -1,0 +1,49 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
+  /*<div class="container">
+    <div class="card quote-card">
+      <div class="card-body">
+        <h2 class="card-title">Get a Quote</h2>
+        
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="plan">Insurance Plan:</label>
+            <select class="form-control" id="plan" name="plan" required>
+              <option value="">Select an insurance plan</option>
+              <option value="Auto">Auto Insurance</option>
+              <option value="Home">Home Insurance</option>
+              <option value="Health">Health Insurance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="coverage">Coverage Amount:</label>
+            <select class="form-control" id="coverage" name="coverage" required>
+              <option value="">Select a coverage amount</option>
+              <option value="$50,000">$50,000</option>
+              <option value="$100,000">$100,000</option>
+              <option value="$250,000">$250,000</option>
+              <option value="$500,000">$500,000</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Get Quote</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
