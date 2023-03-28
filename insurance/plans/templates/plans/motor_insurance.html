@@ -3,17 +3,25 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'landing/styles.css' %}">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h2 class="card-title">Comprehensive</h2>
-            <p class="card-text">Get coverage for your car, third-party liability, and personal accident protection.</p>
-            <p class="card-text">Price: $500</p>
-            <a href="{% url 'comprehesive_detail' %}" class="btn btn-primary">View Details</a>
-          </div>
-        </div>
+<div class="jumbotron">
+  <div class="container">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Motor Insurance Plans</h2>
+        <p class="card-text">Secure your motor cover plan with our motor insurance plans.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'services' %}" role="button">Get Qoute</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-4">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Comprehensive</h2>
+          <p class="card-text">Get coverage for your car, third-party liability, and personal accident protection.</p>
+          <p class="card-text">Price: $500</p>
+          <a href="{% url 'comprehesive_detail' %}" class="btn btn-primary">View Details</a>
       </div>
     </div>
   </div>

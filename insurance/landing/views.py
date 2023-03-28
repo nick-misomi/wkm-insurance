@@ -17,7 +17,7 @@ def home(request):
         subscribedUsers.save()
         # send a confirmation mail
         subject = 'NewsLetter Subscription'
-        message = 'Hello ' + name + ', Thanks for subscribing us. You will get notification of latest articles posted on our website. Please do not reply on this email.'
+        message = 'Hello ' + name + ', Thanks for subscribing to us. You will get notification of latest articles posted on our website. Please do not reply on this email.'
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [email, ]
         send_mail(subject, message, email_from, recipient_list)
