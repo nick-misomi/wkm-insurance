@@ -1,0 +1,20 @@
+{% extends 'wkm/base.html' %}
+{% load static %}
+
+{% block content %}
+  <link rel="stylesheet" type="text/css" href="{% static 'wkm/styles.css' %}">
+  <div class="jumbotron">
+    <h1>Our Services</h1>
+    <p>Choose from our wide range of insurance products to meet your needs.</p>
+    <p><a class="btn btn-primary btn-lg" href="{% url 'qoute' %}" role="button">Get Qoute</a></p>
+  </div>
+
+    <div class="article-detail">
+        <div class="article">
+            <img src="{{ article.thumb.url }}" alt="article image"/>
+            <h2 class="article-title">{{ article.title }}</h2>
+            <p>{{ article.body }}</p>
+            <p>{{ article.date }}</p>
+        </div>
+    </div>
+{% endblock %}

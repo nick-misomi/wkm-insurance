@@ -242,91 +242,47 @@ nav {
   /* comtact form styles */
   .container {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   
-  form {
-    margin-top: 30px;
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
   }
   
   label {
-    font-weight: bold;
+    font-size: 1.2rem;
   }
   
   input[type="text"],
   input[type="email"],
   textarea {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
   }
   
   button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
+    background-color: #007bff;
     border: none;
-    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
     cursor: pointer;
   }
   
   button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0069d9;
   }
   
-  form .form-group {
-    margin-bottom: 20px;
-  }
-
- 
-
-  /*health insurance plans styles*/
-  .container {
-    margin-top: 50px;
-  }
-  
-  .card-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .card-text {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .card-body {
-    padding: 30px;
-  }
-  
-  .list-group-item {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 10px 15px;
-  }
-  
-  .list-group-item:last-child {
-    border-bottom: none;
-  }
-  
-  .list-group {
-    border: none;
-  }
-  
-  .card {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 30px;
-  }
-  
-  .card:hover {
-    box-shadow: 0
-  }
 
   /* health_insurance styles */
   .plan {
@@ -514,51 +470,7 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
- /* footer styles here */
- footer {
-  background-color: #3d4146;
-  padding: 0px 0;
-  display: flex;
-}
-
-footer h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-footer ul {
-  list-style: none;
-  padding: 5px;
-}
-
-footer ul li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  color: #777;
-}
-
-footer ul li a {
-  color: #777;
-}
-
-footer ul li i {
-  margin-right: 10px;
-  color: #007bff;
-  font-size: 1.3rem;
-}
-
-@media (max-width: 767.98px) {
-  footer ul li {
-    font-size: 1rem;
-  }
-  
-  footer ul li i {
-    font-size: 1.1rem;
-  }
-}
-
 /*qoute styles*/
-/* center the form */
 .container {
   display: flex;
   justify-content: center;
@@ -611,4 +523,47 @@ select.form-control {
 
 label {
   font-size: 1rem;
+}
+
+ /* footer styles here */
+ footer {
+  background-color: #3d4146;
+  padding: 0px 0;
+  display: flex;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 5px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+footer ul li a {
+  color: #777;
+}
+
+footer ul li i {
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767.98px) {
+  footer ul li {
+    font-size: 1rem;
+  }
+  
+  footer ul li i {
+    font-size: 1.1rem;
+  }
 }
