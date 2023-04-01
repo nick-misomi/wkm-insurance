@@ -7,6 +7,9 @@ from django.conf import settings
 
 #define a class-based view for home insurance
 def home(request):
+    youtube_id = 'cpP-fCo8Dn4'
+    context = {'youtube_id':youtube_id}
+
     if request.method == 'POST':
         post_data = request.POST.copy()
         email = post_data.get("email", None)
@@ -24,8 +27,6 @@ def home(request):
         res = JsonResponse({'msg': 'Thanks. Subscribed Successfully!'})
         return res
     
-    youtube_id = 'https://youtu.be/cpP-fCo8Dn4'
-    context = {'youtube_id':youtube_id}
     return render(request, 'landing/home.html', context)
 
 def validate_email(request): 
